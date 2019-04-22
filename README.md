@@ -1,2 +1,4 @@
 # vue
 vue demo
+
+-vuex
