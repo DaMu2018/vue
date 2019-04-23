@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+// import HelloWorld from '@/components/HelloWorld'
 import ComponentsA from '@/components/ComponentsA'
 import ComponentsB from '@/components/ComponentsB'
 
@@ -11,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'ComponentsA',
+      component: ComponentsA
     },
     {
       path: '/a',
@@ -21,7 +21,7 @@ export default new Router({
     },
     {
       path: '/b',
-      name: 'ComponentsA',
+      name: 'ComponentsB',
       component: ComponentsB
     }
   ]
