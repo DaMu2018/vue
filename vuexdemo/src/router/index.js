@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import ComponentsA from '@/components/ComponentsA'
 import ComponentsB from '@/components/ComponentsB'
 import table from '@/components/table'
+import treetable from '@/components/treetable'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/table',
       name: 'table',
       component: table
+    },
+    {
+      path: '/tree',
+      name: 'tree',
+      component: treetable
     }
   ]
 })

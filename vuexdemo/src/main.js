@@ -8,7 +8,7 @@ import store from './store/index'
 import ZkTable from 'vue-table-with-tree-grid'
 
 Vue.use(Vuex)
-Vue.use(ZkTable)
+Vue.component(ZkTable.name, ZkTable)
 
 Vue.config.productionTip = false
 
