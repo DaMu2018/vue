@@ -3,6 +3,7 @@ import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 import ComponentsA from '@/components/ComponentsA'
 import ComponentsB from '@/components/ComponentsB'
+import table from '@/components/table'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/b',
       name: 'ComponentsB',
       component: ComponentsB
+    },
+    {
+      path: '/table',
+      name: 'table',
+      component: table
     }
   ]
 })

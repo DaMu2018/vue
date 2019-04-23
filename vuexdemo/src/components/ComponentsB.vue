@@ -2,6 +2,10 @@
   <div class="componentsB">
     <div>B组件</div>
     <div>餐馆名称：{{resturantName}}</div>
+    <div>userId:{{userId}}</div>
+    <div v-for="item in userName" :key="item.index">
+      {{item}}
+    </div>
     <div>
       <!-- 修改为B餐馆 -->
       <button @click="modifyByName('B餐馆')">修改为B餐馆</button>
@@ -25,10 +29,13 @@ export default {
     ),
     turnToA () {
       this.$router.push({ path: '/a' })
+    },
+    dbclick () {
+      console.log('dbclick')
     }
   },
   computed: {
-    ...mapGetters(['resturantName']) // 动态计算属性，相当于this.$store.getter.resturantName
+    ...mapGetters(['resturantName', 'userId', 'userName']) // 动态计算属性，相当于this.$store.getter.resturantName
   }
 }
 </script>

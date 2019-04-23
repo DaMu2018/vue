@@ -9,4 +9,4 @@ export function modifyByName ({commit}, name) {
 }
 
 // ES6精简写法
-export const modifyId = ({commit}, id) => commit('modifyId', id)
+export const modifyId = ({commit}, id) => commit('MODIFYUSERNAME', id)

@@ -5,8 +5,10 @@ import App from './App'
 import router from './router'
 import Vuex from 'vuex'
 import store from './store/index'
+import ZkTable from 'vue-table-with-tree-grid'
 
 Vue.use(Vuex)
+Vue.use(ZkTable)
 
 Vue.config.productionTip = false
 
